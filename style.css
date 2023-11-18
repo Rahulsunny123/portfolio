@@ -427,7 +427,7 @@ display: none;
 .p3circle {
 top: 97vh;
 width: 22vw;
-display:none;
+display: none;
 }
 
 .page4 {
@@ -449,8 +449,7 @@ position: absolute;
 .p4circle {
 width: 22vw;
 height: 8vh;
-left: 77vh
-    display:none;
+left: 77vh;
 }
 
 .page5 {
