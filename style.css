@@ -11,7 +11,7 @@
     --pages-color: #ece6e3;
 }
 
-.cursor{
+.cursor {
     height: 2vh;
     width: 2vh;
     background-color: #000;
@@ -62,7 +62,7 @@ html {
     color: #fff;
 }
 
-.box2 h1 span{
+.box2 h1 span {
     background-color: rgb(0, 0, 0);
     border-radius: 1vh;
 }
@@ -166,51 +166,52 @@ html {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-color:var(--pages-color);
+    background-color: var(--pages-color);
     display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4vw;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
 
 }
 
 
-#p3img1{
+#p3img1 {
     height: 50vh;
-  margin-left: 10vw;
-  margin-top:20vh;
-}
-.p3container{
-
-  height: 20vh;
-  width: 43vw;
-  text-align: center;
-  color: #000;
-  margin-right: 3vw;
+    margin-left: 10vw;
+    margin-top: 20vh;
 }
 
-.p3circle{
+.p3container {
+
+    height: 20vh;
+    width: 43vw;
+    text-align: center;
+    color: #000;
+    margin-right: 3vw;
+}
+
+.p3circle {
     background-color: #000;
-  height: 9vh;
-  width: 9vw;
-  position: absolute;
-  border-radius: 50%;
-  display: flex;
-  left: 7vw;
-  justify-content: center;
-  align-items: center;
-  top: 65vh;
+    height: 9vh;
+    width: 9vw;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    left: 7vw;
+    justify-content: center;
+    align-items: center;
+    top: 65vh;
 }
 
 
 
 
 /* page4 */
-.page4{
+.page4 {
     position: relative;
     height: 60vh;
     width: 100%;
-    background-color:var(--pages-color);
+    background-color: var(--pages-color);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -218,14 +219,14 @@ html {
 
 }
 
-#p4img1{
+#p4img1 {
     height: 50vh;
-    margin-top:20vh;
-    
+    margin-top: 20vh;
+
 }
 
 
-.p4container{
+.p4container {
     height: 20vh;
     width: 43vw;
     text-align: center;
@@ -233,27 +234,27 @@ html {
     margin-top: 15vh;
 }
 
-.p4circle{
+.p4circle {
     background-color: #000;
-  height: 9vh;
-  width: 9vw;
-  position: absolute;
-  border-radius: 50%;
-  display: flex;
-  left: 85vw;
-  justify-content: center;
-  align-items: center;
-  top: 50vh;
+    height: 9vh;
+    width: 9vw;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    left: 85vw;
+    justify-content: center;
+    align-items: center;
+    top: 50vh;
 }
 
-.p4circle h4{
+.p4circle h4 {
     font-size: 3vh;
 }
 
 
 /* page5 */
 
-.page5{
+.page5 {
     min-height: 40vh;
     width: 100%;
     background-color: #000;
@@ -262,8 +263,8 @@ html {
     align-items: center;
 }
 
-.page5 h2 span{
-    background-color:rosybrown;
+.page5 h2 span {
+    background-color: rosybrown;
     border-radius: 1vh;
 }
 
@@ -279,7 +280,7 @@ html {
 
 
 /* animation css */
-.profile{
+.profile {
     height: 100vh;
     width: 100%;
     background-color: cadetblue;
@@ -288,7 +289,8 @@ html {
     display: none;
     transition: all ease-in-out 0.5s;
 }
-.education{
+
+.education {
     height: 100vh;
     width: 100%;
     background-color: rgb(157, 160, 95);
@@ -298,7 +300,8 @@ html {
 
     transition: all ease-in-out 0.5s;
 }
-.skills{
+
+.skills {
     height: 100vh;
     width: 100%;
     background-color: rgb(113, 95, 160);
@@ -307,7 +310,8 @@ html {
     display: none;
     transition: all ease-in-out 0.5s;
 }
-.projects{
+
+.projects {
     height: 100vh;
     width: 100%;
     background-color: rgb(95, 160, 112);
@@ -322,21 +326,134 @@ html {
 
 /* css for the animations */
 
-.containerav{
-  height: 10vh;
-  width: 100%;
+.containerav {
+    height: 10vh;
+    width: 100%;
 }
 
-#containerback{
+#containerback {
     font-size: 4vw;
-  background-color: transparent;
-  border: none;
+    background-color: transparent;
+    border: none;
 }
 
-.ri-arrow-left-s-fill{
+.ri-arrow-left-s-fill {
     color: #000;
 }
 
-.ri-arrow-down-s-fill:hover{
+.ri-arrow-down-s-fill:hover {
     cursor: pointer;
 }
+
+
+
+
+@media (max-width:600px) {.nav {
+    height: 15vh;
+}
+
+.nav h2 {
+    font-size: 4vh;
+}
+
+.box {
+    height: 15vh;
+    width: 70vw;
+    margin-left: 6vw;
+    margin-top: 5vh;
+    position: relative;
+}
+
+.box img {
+    position: absolute;
+    height: 30vh;
+    width: inherit;
+    object-fit: cover;
+    object-position: center;
+    bottom: 4vh;
+}
+
+.box2 {
+    margin-right: 5%;
+    width: 80vw;
+
+}
+
+.box2 p {
+    margin-top: 2vh;
+
+}
+
+.containerp2 .boxes {
+    height: 8.5vh;
+    width: 100%;
+}
+
+.containerp2 {
+    position: relative;
+    height: 40vh;
+    width: 90vw;
+    top: 4vh;
+    /* bottom: 1vh; */
+}
+
+.page1 {
+    z-index: 200;
+}
+
+.page2 {
+    width: 100%;
+    min-height: 35vh;
+    z-index: 250;
+}
+
+.page3 #p3img1 {
+    height: 35vh;
+    top: 20vh;
+    margin-right: 10vw;
+    margin-top: 75vh;
+}
+}
+
+.page3 {
+z-index: 200;
+height: 60vh;
+}
+
+.p3container {
+display: none;
+}
+
+.p3circle {
+top: 97vh;
+width: 22vw;
+}
+
+.page4 {
+z-index: 200;
+min-height: 60vh;
+}
+
+.page4 .p4container {
+font-size: 12px;
+margin-top: 22vh;
+width: 84vw;
+}
+
+#p4img1 {
+height: 27vh;
+position: absolute;
+}
+
+.p4circle {
+width: 22vw;
+height: 8vh;
+left: 77vh;
+}
+
+.page5 {
+font-size: 14px;
+min-height: 15vh;
+text-align: center;
+}
+
