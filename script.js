@@ -167,13 +167,13 @@ console.log(c)
 // page 3 animations
 
 
-function p3img1(){
-    gsap.to("#p3img1",{
-        y:-270,
-        scrollTrigger:{
-            trigger:"#p3img1",
-            scroller:"#main",
-            scrub:2,
+function p3img1() {
+    gsap.to("#p3img1", {
+        y: -270,
+        scrollTrigger: {
+            trigger: "#p3img1",
+            scroller: "#main",
+            scrub: 2,
             // start:"top 60%"
         }
 
@@ -183,13 +183,13 @@ function p3img1(){
 p3img1();
 
 
-function p3circle(){
-    gsap.to(".p3circle",{
-        y:-570,
-        scrollTrigger:{
-            trigger:".p3circle",
-            scroller:"#main",
-            scrub:3,
+function p3circle() {
+    gsap.to(".p3circle", {
+        y: -570,
+        scrollTrigger: {
+            trigger: ".p3circle",
+            scroller: "#main",
+            scrub: 3,
             // start:"top 60%"
         }
 
@@ -199,14 +199,14 @@ function p3circle(){
 p3circle();
 
 
-function p3container(){
-    gsap.to(".p3container",{
-        y:70,
-        scrollTrigger:{
-            trigger:".p3container",
-            scroller:"#main",
-            scrub:2,
-            start:"top 80%"
+function p3container() {
+    gsap.to(".p3container", {
+        y: 70,
+        scrollTrigger: {
+            trigger: ".p3container",
+            scroller: "#main",
+            scrub: 2,
+            start: "top 80%"
         }
 
     })
@@ -218,15 +218,15 @@ p3container();
 // page 4
 
 
-function p4img1(){
-    gsap.to("#p4img1",{
-        y:-270,
-        scrollTrigger:{
-            trigger:"#p4img1",
-            scroller:"#main",
-            scrub:2,
+function p4img1() {
+    gsap.to("#p4img1", {
+        y: -270,
+        scrollTrigger: {
+            trigger: "#p4img1",
+            scroller: "#main",
+            scrub: 2,
             // markers:true,
-            start:"top 90%"
+            start: "top 90%"
         }
 
     })
@@ -235,13 +235,13 @@ function p4img1(){
 p4img1();
 
 
-function p4circle(){
-    gsap.to(".p4circle",{
-        y:-670,
-        scrollTrigger:{
-            trigger:".p4circle",
-            scroller:"#main",
-            scrub:4,
+function p4circle() {
+    gsap.to(".p4circle", {
+        y: -670,
+        scrollTrigger: {
+            trigger: ".p4circle",
+            scroller: "#main",
+            scrub: 4,
             // start:"top 60%"
         }
 
@@ -251,17 +251,57 @@ function p4circle(){
 p4circle();
 
 
-function p4container(){
-    gsap.to(".p4container",{
-        y:70,
-        scrollTrigger:{
-            trigger:".p4container",
-            scroller:"#main",
-            scrub:2,
-            start:"top 80%"
+function p4container() {
+    gsap.to(".p4container", {
+        y: 70,
+        scrollTrigger: {
+            trigger: ".p4container",
+            scroller: "#main",
+            scrub: 2,
+            start: "top 80%"
         }
 
     })
 }
 
 p4container();
+
+
+
+Shery.mouseFollower({
+    //Parameters are optional.
+    skew: true,
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 0.7,
+});
+
+Shery.imageMasker("#p3img1" /* Element to target.*/, {
+    //Parameters are optional.
+    mouseFollower: true,
+    text: "Rahul",
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
+
+Shery.imageMasker("#p4img1" /* Element to target.*/, {
+    //Parameters are optional.
+    mouseFollower: true,
+    text: "School",
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
+
+  Shery.makeMagnet(".img1" /* Element to target.*/, {
+    //Parameters are optional.
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
+
+  Shery.imageEffect(".img1", {
+    style: 2, //Select Style
+    debug: true, // Debug Panel
+    config: {
+      /* Config made from debug panel */
+    },
+    preset: "./presets/wigglewobble.json",
+  });
